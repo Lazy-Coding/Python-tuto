@@ -1,0 +1,144 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body class="dark">
+    <h2>Python Tutorial (Sort of)</h2>
+    <div class="line"></div> 
+    <div class="container">
+        <h3>Let's get started !</h3><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;So if you were to write programs in any language, what are the things that u need the most to get you started.?
+         Any guess? Well, Incase you couldn't come up with anything, lemme help you with it.
+         I'm not going to ask what you gonna use it for.. I don't care about that anyway. So, say you want to write a simple program, which takes
+         two numbers, adds them and displays the result; What are the things you'll need to achieve this?
+         <ul>
+             <li> First of all, you need to know how a program is structured in that particular language
+                 <br>For example, A typical C program would look like this,<br>
+                 <p class="program">
+                 #include&lt;stdio.h&gt; &nbsp;&nbsp;&nbsp;&nbsp;//saves you the trouble of writing low level code<br><br>
+                 int main(){&nbsp;&nbsp;&nbsp;&nbsp;//this is the main entry point for the program<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;//do something<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;return 0;&nbsp;&nbsp;&nbsp;&nbsp;//have to return something because of type signature<br>
+                 }</p>
+                 <br>
+             </li>
+             <li>So what about Python? What kind of structure does this language follow? Well, Nothing that grand.
+                 What matters the most in python program is <strong>Indentation</strong>.If you want to know more about python's structure, feel free to google.
+             </li>
+             <li>
+                Now, for any program, you should know atleast how to print stuff to the screen.
+                <div class="console">
+                    <div class="code">
+                        <p class="term">
+                            >>> print( "Hello World" )
+                        </p>
+                        <p class="alt_term">
+                           Hello World
+                        </p>
+                        <p class="term">
+                                >>> print( "%s" % "Hello World")
+                        </p>
+                        <p class="alt_term">
+                            Hello World
+                        </p>
+                    </div>
+                </div>    <br>
+                 I've shown you two ways to print stuff, for more, well, go on, google it or <a class="hyper" href="https://www.python-course.eu/python3_formatted_output.php">try this</a>;
+             </li>
+             <li>
+                So, now that you know how to print stuff, let's move on to something else. So how do you store data?<br>
+                If you have experience with other languages, you should know about variables and constants. So how do you use a variable in python?<br>
+                Well, just name it and use it :) you don't have to worry about data types and stuf like that.
+                <div class="console">
+                    <div class="code">
+                        <p class="term">
+                            >>>a = 10<br>
+                            >>>print(a)</p>
+                            <p class="alt-term">
+                                    10
+                            </p><p class="term">
+                            >>>a="yo"</p>
+                            <p class="alt-term">
+                                    yo
+                            </p>
+                    </div>
+                </div>
+                <br>
+                For more on variables, constants, literals, well google it, or atleast <a class="hyper" href="https://www.programiz.com/python-programming/variables-constants-literals">click here</a>!.
+             </li>
+             <li>
+                 So what if you want to interact with user? like maybe get input from him? So how do you achieve that?
+                 In python 3.x , you can take input easily using input() func.
+                 <div class="console">
+                    <div class="code">
+                        <p class="term">
+                        >>>a=input("enter a number? ")
+                        </p>
+                        <p class="alt-term">
+                            enter a number? 15
+                        </p>
+                        <p class="term">
+                            >>>print(a)
+                        </p>
+                        <p class="alt-term">
+                            15
+                        </p>
+                    </div>
+                 </div><br>
+             </li>  
+             <li>
+                So, let's go a little fancier, Let's write a function!!!! A function in python starts with <strong>def </strong>keyword, followed by the name of the function, and then parameters enclosed in (). and in the end, a '<strong>: </strong>' This marks the start of the function,
+                    now from next line, all lines that are indented become the body of the function. Function body ends with the indentation.
+                    As always, google if you want to know the specifics.
+                    <p class="program">
+                        def add ( p ,q ) :<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return p+q<br>
+                        a = input ("Enter a: ")<br>
+                        b = input ("\nEnter b: ")<br>
+                        print("\nSum is %d" % add(a,b))<br>
+                    </p>
+                    <div class="console">
+                        <div class="code">
+                            <p class="term">
+                                >>>python3 add.py
+                            </p>
+                            <p class="alt-term">
+                                Enter a: 10<br>
+                                Enter b: 20<br>
+                                Sum is 30<br>
+                            </p>
+                        </div>
+                    </div>
+                    <br>And if you wanna play around, you can use this <a class="hyper" href="https://www.onlinegdb.com/online_python_compiler">online python compiler</a>
+             </li>
+             <li>
+                 Maybe we forgot something rather important.. Oh yeah, Loops.!. Well this is how you do it,<br>
+                 <p class="program">
+                     for [iterating variable] in [sequence]:<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;[do something]<br>
+                 </p>
+                 <div class="console">
+                     <div class="code">
+                         <p class="term">
+                             >>> for i in range ( 0 , 5 ) :<br>
+                             ...&nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+                             ...<br>
+                         </p>
+                         <p class="alt-term">
+                             0<br>1<br>2<br>3<br>4<br>
+                         </p>
+                     </div>
+                 </div>
+                 <br>Don't take those '...' in account, that is just console going to next line and allowing us to write more lines of code.Note however, that indentation has still been done(4 spaces). That's really important.
+             </li>
+         </ul>
+         <h3>Well That's it for today, I just thought that knowing these might give you an heads up. Text me when you are done with this.</h3>
+    </div>
+</body>
+</html>
